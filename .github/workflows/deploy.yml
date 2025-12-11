@@ -1,5 +1,0 @@
-cache: 'npm'
-      # 必須確保這一行存在！
-      cache-dependency-path: '' 
-  - name: Install dependencies
-    run: npm install --legacy-peer-deps
