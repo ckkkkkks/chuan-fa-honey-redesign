@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  // 這裡非常重要，這行會修正 404 路徑錯誤
+  plugins: [react(), tsconfigPaths()],
+  // 核心修正：加入 base 屬性
   base: '/chuan-fa-honey-redesign/', 
 })
