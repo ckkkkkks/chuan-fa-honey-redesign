@@ -3,8 +3,8 @@
         with:
           node-version: 20
           cache: 'npm'
-          # 確保這一行存在！
+          # 必須確保這一行存在！
           cache-dependency-path: '' 
       - name: Install dependencies
-        # 確保這一行存在！
+        # 建議確保這一行存在！
         run: npm install --legacy-peer-deps
